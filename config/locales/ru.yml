@@ -1,0 +1,7 @@
+shared:
+  header:
+    logo_title: "Оценка шахматных позиций"
+    home: "Главная"
+    help: "Помощь"
+    sign_in: "Войти"
+    sign_out: "Выйти"

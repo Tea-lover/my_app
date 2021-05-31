@@ -1,0 +1,20 @@
+= form_with(model: value) do |form|
+  - if value.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(value.errors.count, "error")
+        prohibited this value from being saved:
+      %ul
+        - value.errors.each do |error|
+          %li= error.full_message
+  .field
+    = form.label :user_id
+    = form.number_field :user_id
+  .field
+    = form.label :image_id
+    = form.number_field :image_id
+  .field
+    = form.label :value
+    = form.text_field :value
+  .actions
+    = form.submit

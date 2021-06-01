@@ -16,24 +16,82 @@
 #
 # This would use the information in config/locales/es.yml.
 #
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
 # To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
+# available at http://guides.rubyonrails.org/i18n.html.
+en:
+  hello: "Hello world"
+
+  shared:
+    header:
+      logo_title: "Experteese in Ruby_on_Rails"
+      home: "Home"
+      help: "Help"
+      sign_in: "Sign in"
+      sign_out: "Sign out"
+      person: "Me"
+      profile: "My page"
+      settings: "Settings"
+      about: "About"
+      contacts: "Contacts"
+    #      logged_msg: "Logged in as "
+    footer:
+
+      dev_msg: "App is in Development"
+  sessions:
+    new:
+      sign_in: "Sign in"
+      sign_up: "Sign up"
+      email: "E-mail"
+      password: "Password"
+      new_user?: "New user?"
+  users:
+    form:
+      name: "Name"
+      email: "E-mail"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      #      confirmation: "Подтверждение"
+      create_account: "Create my account"
+    new:
+      new_user_sign_up: "New user sign up"
+      back: "Back"
+
+    show:
+      work: "Proceed to work"
+      email: "Email"
+  work:
+    index:
+      def_select_theme: "Select theme to leave your answer"
+      common_value: "common value"
+      total_values: "total values"
+      make_decision: "Make your decision"
+      save_decision: "save"
+      share_opinion: "Share your opinion"
+    button_theme_select:
+      select_theme_button: "Select theme"
+    button_list_results:
+      results_list: "list results"
+    choose_theme_from_arr:
+      select_theme: "Select theme to leave your answer"
+    choose_theme:
+      select_theme: "select theme ch"
 
 
-shared:
-  header:
-    logo_title: "Evaluate chess positions"
-    home: "Home"
-    help: "Help"
-    sign_in: "Sign in"
-    sign_out: "Sign out"
+
+      # titles
+      theme_name: "Theme name"
+    display_theme:
+      select_theme: "Select theme"
+
+    results_list:
+      no_values: "No Values results for selected theme..."
+      select_theme: "Select other theme"
+      return_to_main: "Return to main"
+      # titles
+      page_title: "Go to work area"
+
+  main:
+    about:
+      about_title: "About"
+    contacts:
+      contacts_title: "Contacts"

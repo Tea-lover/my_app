@@ -17,3 +17,14 @@ $(document).click(function(e){
 $('.select_theme').empty().html("<%= j render 'choose_theme_from_arr' -%>");
 
 console.log("hehehe"  );
+
+$("#slide").change(function (){
+    //get the element
+    var displayValue = document.getElementById("chosen_value");
+    //show the amount
+    var val=parseInt(this.value)
+    var theme=$(".up-theme")[0];
+    displayValue.setAttribute("value",this.value)
+    displayValue.innerHTML = val.toString();
+
+});

@@ -4,7 +4,17 @@
       .left_controls
         .select_theme
           = render 'work/button_theme_select', locale: @current_locale
-      %br
+        %br
+        .modal_list_results
+          = render 'work/button_list_results'
+          %br
+
+        %span.total_values
+          = t('.total_values')
+          %h2.total{:title => "Total values"} #{@values_qty.round}
+        %span.common_value
+          = t('.common_value')
+          %h2.common{:title => "Common value"}
 
     .col-md-9
       .image_display
@@ -31,3 +41,20 @@
             .img-right-side
               %h3{:title => "list to next image"}
                 %i.fa.fa-chevron-circle-right
+        .row.diag
+          .col-md-12
+            .image_diag
+
+
+              %h2.down{:title => "Value scale"}
+                = t(".make_decision")
+              %button.button__results.save{:title => "Save image diag results"}
+                %a{"data-remote" => "true", :format => "js", :href => "#", :title => "Save image diag results"}
+                  = t(".save_decision")
+              #chosen_value 0
+              %p.left -10
+              #slider
+                %input#slide{:max => "10", :min => "-10", :value => "0",
+                             :step => "1", :type => "range"}
+              %p.right 10
+              %br

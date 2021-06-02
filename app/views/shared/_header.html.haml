@@ -39,12 +39,12 @@
     %li.navItem= link_to t('.contacts'), main_contacts_path
     %li.navItem= link_to t('.help'), main_help_path
     - if signed_in?
-      -#%li= link_to t('.users'), '#'
       %li.logged
-        = current_user.email
         = gravatar_for current_user
+      %li.navItem1
+        = link_to t('.profile'), current_user
+        = link_to t('.sign_out'), signout_path, method: "delete"
 
-      %li.navItem= link_to t('.sign_out'), signout_path, method: "delete"
     - else
       %li.navItem= link_to t('.sign_in'), signin_path
 

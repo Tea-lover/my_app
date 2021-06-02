@@ -22,6 +22,10 @@ body {
   display:inline-block;
   flex-grow: 1;
 }
+.navItem1, .navItem1 a {
+    display:inline-block;
+    flex-grow: 1;
+}
 .navItem a {
   width:100%;
   padding-top:30px;
@@ -32,6 +36,29 @@ body {
   text-shadow: 1px 1px 2px rgba(34,34,34,0.4);
   font-weight:600;
   font-size:18px;
+}
+.navItem1 a {
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    text-shadow: 1px 1px 2px rgba(34,34,34,0.4);
+    font-weight:600;
+    font-size:18px;
+}
+.navItem1:nth-of-type(1) {
+    border-bottom:2px solid #D60F3A;
+}
+.navItem1:nth-of-type(1) a:hover {
+    background:#D60F3A;
+}
+.navItem1:nth-of-type(2) {
+    border-bottom:2px solid #8317AD;
+}
+.navItem1:nth-of-type(2) a:hover {
+    background:#8317AD;
 }
 .navItem:nth-of-type(1) {
   border-bottom:2px solid #D60F3A;
@@ -80,10 +107,10 @@ body {
   margin-bottom: 60px;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
+    /* position: absolute;*/
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
 }

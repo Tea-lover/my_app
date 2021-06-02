@@ -31,5 +31,5 @@ Rails.application.routes.draw do
   match 'results_list',     to: 'work#results_list', via: :get
 
   match 'save_value',       to: 'api/api#save_value',   via: :get
-
+  match 'show', to: 'users#show', via: :get
 end

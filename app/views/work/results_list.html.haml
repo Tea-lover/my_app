@@ -31,7 +31,7 @@
       - @composite_results_paged.each do |composite_diag|
         %tr.one_row
           %td{ :style => "text-align: left; width: 25em" }= composite_diag.name
-          %td= image_tag('/assets/pictures/' + composite_diag.file, {:width => "53", :height =>"47", title: "Tested image"} )
+          %td= image_tag('/assets/images/pictures/' + composite_diag.file, {:width => "53", :height =>"47", title: "Tested image"} )
           -#                                                          , :class => "opinion_image_preview ttip"
           -#%td= composite_diag.user_id
           %td{ :style => "color: rgba(122, 13, 75, 1);" }= composite_diag.ave_value

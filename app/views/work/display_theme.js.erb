@@ -102,7 +102,7 @@ $('.img-right-side').click(function (event) {
             oneImageFile, title: "Selected image"
         });
         var userValuedFlag = data_return.user_valued;
-        console.log("smth" + data_return.user_valued);
+        console.log("smth Valued: " + data_return.user_valued);
         if(userValuedFlag  == 1){
             $('.left_controls span.common_value').css({"display": "block"});
             var imageValue = data_return.value;
@@ -110,6 +110,8 @@ $('.img-right-side').click(function (event) {
             $('.image .image_display .image_diag').css({"display": "none"});
             var imageCommonValue = data_return.common_ave_value;
             $('.left_controls span.common_value h2.common').append().html(imageCommonValue);
+            console.log("Common Value:  " + imageCommonValue);
+
         }else{
             $('.left_controls span.common_value').css({"display": "none"});
             $('.image .image_display .image_user_value').css({"display": "none"});
@@ -154,6 +156,8 @@ $('.img-left-side').click(function (event) {
             $('.image .image_display .image_diag').css({"display": "none"});
             var imageCommonValue = data_return.common_ave_value;
             $('.left_controls span.common_value h2.common').append().html(imageCommonValue);
+            console.log("Common Value:  " + imageCommonValue);
+
         }else{
             $('.left_controls span.common_value').css({"display": "none"});
             $('.image .image_display .image_user_value').css({"display": "none"});

@@ -13,6 +13,7 @@ ru:
       settings: "Настройки"
       about: "О сайте"
       contacts: "Контакты"
+      work: "Не волк"
     #      logged_msg: "Вошел как "
     footer:
 
@@ -37,23 +38,25 @@ ru:
       new_user_sign_up: "Регистрация нового пользователя"
       back: "Назад"
     show:
-      work: "Экспертиза"
+      work: "К оценке"
       email: "Email"
+      edit: "Редактировать профиль"
+      back: "Назад"
   work:
     index:
       def_select_theme: "Выберите тему для оценки"
-      common_value: "средняя оценка"
-      total_values: "всего оценок"
+      common_value: "Средняя оценка"
+      total_values: "Всего оценок"
       make_decision: "Выберите свою оценку"
-      save_decision: "сохранить"
+      save_decision: "Сохранить"
       share_opinion: "Поделись своим мнением"
     button_theme_select:
       select_theme_button: "Выбрать тему"
 
     button_list_results:
-      results_list: "результаты"
+      results_list: "Результаты"
     choose_theme_from_arr:
-      select_theme: "выберите тему"
+      select_theme: "Выберите тему"
 
 
 

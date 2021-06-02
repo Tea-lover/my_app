@@ -154,7 +154,7 @@ $('.img-left-side').click(function (event) {
             var imageValue = data_return.value;
             $('.image .image_display .image_user_value').append().html(imageValue).css({"display": "block"});
             $('.image .image_display .image_diag').css({"display": "none"});
-            var imageCommonValue = data_return.common_ave_value;
+            var imageCommonValue = data_return.common_avg_value;
             $('.left_controls span.common_value h2.common').append().html(imageCommonValue);
             console.log("Common Value:  " + imageCommonValue);
 

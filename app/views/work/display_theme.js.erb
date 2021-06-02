@@ -196,7 +196,7 @@ $('.button__results.save').unbind( "click" ).click(function(event) {
             var valuesQty = data_return.values_qty;
             $('.left_controls span.total_values h2.total').append().html(valuesQty);
 
-            var imageCommonValue = data_return.common_ave_value;
+            var imageCommonValue = data_return.common_avg_value;
             evaluated = evaluation(imageCommonValue);
             console.log("6 IN save_value: imageCommonValue = " + evaluated);
             $('.left_controls span.common_value h2.common').append().html(evaluated);
